@@ -1,7 +1,8 @@
 %define	snap	20090525
 Summary:	Extra rules and tools for udev
+Summary(pl.UTF-8):	Dodatkowe reguły i narzędzia dla udev
 Name:		udev-extras
-Version:	20090516
+Version:	0
 Release:	0.%{snap}.1
 License:	GPL v2+
 Group:		Base
@@ -11,21 +12,27 @@ Group:		Base
 Source0:	%{name}-%{snap}.tar.bz2
 # Source0-md5:	5aa462246e90f0527c78ea9866436f18
 URL:		http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
+BuildRequires:	acl-devel
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	glib2-devel
+BuildRequires:	gperf
 BuildRequires:	libtool
 BuildRequires:	libusb-devel
 BuildRequires:	libxslt-devel
 BuildRequires:	pciutils
 BuildRequires:	pkg-config
-BuildRequires:	udev-devel
+BuildRequires:	udev-devel >= 141
 BuildRequires:	usbutils >= 0.82
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The udev-extras package contains an additional rules and tools to
 create and identify devices.
+
+%description -l pl.UTF-8
+Pakiet udev-extras zawiera dodatkowe reguły i narzędzia do tworzenia i
+identyfikacji urządzeń.
 
 %prep
 %setup -q -n %{name}
