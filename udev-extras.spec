@@ -18,8 +18,9 @@ BuildRequires:	automake
 BuildRequires:	glib2-devel
 BuildRequires:	gperf
 BuildRequires:	libtool
-BuildRequires:	libusb-devel
+BuildRequires:	libusb-compat-devel
 BuildRequires:	libxslt-devel
+BuildRequires:	libxslt-progs
 BuildRequires:	pciutils
 BuildRequires:	pkg-config
 BuildRequires:	udev-devel >= 141
