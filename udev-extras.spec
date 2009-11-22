@@ -22,7 +22,7 @@ BuildRequires:	libusb-compat-devel
 BuildRequires:	libxslt-devel
 BuildRequires:	libxslt-progs
 BuildRequires:	pciutils
-BuildRequires:	pkg-config
+BuildRequires:	pkgconfig
 BuildRequires:	udev-devel >= 141
 BuildRequires:	usbutils >= 0.82
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
